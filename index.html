@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM & TABLE Using DOM</title>
+    <script src="script.js" defer></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">REGISTRATION FORM</div>
+        <form action="#" class="formbox">
+            <div class="user-details">
+                <div class="input-box">
+                    <label for="firstname" class="details">FIRST NAME</label for="">
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter your First name" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <label for="lastname" class="details">LAST NAME</label for="">
+                    <input type="text" name="lastname" id="lastname"  placeholder="Enter your Last name" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <label for="pincode" class="details">PINCODE</label for="">
+                    <input type="text" name="pincode" placeholder="Enter pincode" id="pincode" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <label for="address" class="details" >ADDRESS</label for="">
+                    <input type="address" name="address" placeholder="Enter your address" id="address" row="10" col="4" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <label for="state" class="details">STATE</label for="">
+                    <input type="text" name="state" id="state" placeholder="State name" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <label for="country" class="details">COUNTRY</label for="">
+                    <input type="text" name="country" id="country" placeholder="Country name" autocomplete="off" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <span>GENDER</span>
+                <div class="category">
+                    <input type="radio" name="gender"  value="Male"  id="male">
+                    <label for="male">Male</label> 
+                    <input type="radio" name="gender"  value="Female"  id="female">
+                    <label for="female">Female</label> 
+                    <input type="radio" name="gender"  value="Prefer not to tell"  id="other">
+                    <label for="other">Prefer not to tell</label> 
+               
+                </div>
+            </div>
+            <div class="Food-details">
+                <span for="food">FAVOURITE FOOD <small>(SHOULD SELECT ATLEAST 2)</small> </span>
+                <div class="category">
+
+                    <input type="checkbox" name="food" value="Shawai" >Shawai
+                    <input type="checkbox" name="food"  value="Chocolate">Chocolate
+                    <input type="checkbox" name="food"  value="Alfam">Alfam
+                    <input type="checkbox" name="food"  value="Meals">Meals
+                    <input type="checkbox" name="food" value="Icecream" >Icecream
+                </div>
+            </div>
+             <div class="button">
+               
+                <div class="submitbutton">SUBMIT</div>
+             </div>
+        </form>
+    </div>
+
+    <main class="table">
+        <section class="table-header">
+            <h3>USER DETAILS</h3></section>
+        <section class="table-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name </th>
+                        <th>Last Name </th>
+                        <th>PIN code </th>
+                        <th>Address </th>
+                        <th>State </th>
+                        <th>Country </th> 
+                        <th>Gender </th>
+                        <th>FAV Food</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr>
+                        <td>1</td>
+                        <td> Nandhu</td>
+                        <td>Krishna</td>
+                        <td>695581</td>
+                        <td>S V Mandiram, Karyavattom p o</td>
+                        <td>Kerala</td>
+                        <td>India</td>
+                        <td>Male</td>
+                        <td>Shawai, Meals</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+  
+     
+</body>
+</html>
